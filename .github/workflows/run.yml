@@ -18,7 +18,7 @@ jobs:
     - name: Say Hello
       run: echo "👋 Hello, GitHub Actions!"
 
-    - name: Show current date
+    - name: Show current date and time
       run: date && time
 
     - name: List files in repo
