@@ -25,7 +25,7 @@ jobs:
       run: ls -la
 
     - name: List branches
-      run: git branch
+      run: git branch -a
 
 
     - name: Run a simple script
