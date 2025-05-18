@@ -1,23 +1,16 @@
-echo "What is your name?"
-read name
-echo "Hello $name"
+#!/bin/bash
 
-echo "What is your last name?"
-read last_name
-echo "Hello $name $last_name"
+# Exit on any error
+set -e
 
-echo "What is your age?"
-read age
-echo "Hello $name $last_name, you are $age years old"
+echo "Hello $USER_NAME"
 
-echo "What is your favorite color?"
-read color
-echo "Hello $name $last_name, you are $age years old and your favorite color is $color"
+echo "Hello $USER_NAME $LAST_NAME"
 
-echo "What is your favorite food?"
-read food
-echo "Hello $name $last_name, you are $age years old, your favorite color is $color and your favorite food is $food"
+echo "Hello $USER_NAME $LAST_NAME, you are $AGE years old"
 
-echo "What is your favorite movie?"
-read movie
-echo "Hello $name $last_name, you are $age years old, your favorite color is $color, your favorite food is $food and your favorite movie is $movie"
+echo "Hello $USER_NAME $LAST_NAME, you are $AGE years old and your favorite color is $FAVORITE_COLOR"
+
+echo "Hello $USER_NAME $LAST_NAME, you are $AGE years old, your favorite color is $FAVORITE_COLOR and your favorite food is $FAVORITE_FOOD"
+
+echo "Hello $USER_NAME $LAST_NAME, you are $AGE years old, your favorite color is $FAVORITE_COLOR, your favorite food is $FAVORITE_FOOD and your favorite movie is $FAVORITE_MOVIE"
