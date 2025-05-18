@@ -1,34 +1,51 @@
-# This is a basic workflow to help you get started with Actions
-
 name: CI
 
-# Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+    inputs:
+      username:
+        description: 'Your first name'
+        required: true
+        default: 'John'
+      last_name:
+        description: 'Your last name'
+        required: true
+        default: 'Doe'
+      age:
+        description: 'Your age'
+        required: true
+        default: '30'
+      favorite_color:
+        description: 'Favorite color'
+        required: true
+        default: 'blue'
+      favorite_food:
+        description: 'Favorite food'
+        required: true
+        default: 'pizza'
+      favorite_movie:
+        description: 'Favorite movie'
+        required: true
+        default: 'Inception'
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
+    env:
+      USER_NAME: ${{ github.event.inputs.username }}
+      LAST_NAME: ${{ github.event.inputs.last_name }}
+      AGE: ${{ github.event.inputs.age }}
+      FAVORITE_COLOR: ${{ github.event.inputs.favorite_color }}
+      FAVORITE_FOOD: ${{ github.event.inputs.favorite_food }}
+      FAVORITE_MOVIE: ${{ github.event.inputs.favorite_movie }}
+
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
+      - name: Make script executable
+        run: chmod +x ./script/bash.sh
 
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run:  ./script/bash.sh
+      - name: Run bash script
+        run: ./script/bash.sh
