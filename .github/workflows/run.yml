@@ -19,13 +19,16 @@ jobs:
       run: echo "👋 Hello, GitHub Actions!"
 
     - name: Show current date
-      run: date
+      run: date && time
 
     - name: List files in repo
       run: ls -la
 
     - name: List branches
       run: git branch -a
+
+    - name: echo name
+      run: echo "my name is LAT"
 
 
     - name: Run a simple script
