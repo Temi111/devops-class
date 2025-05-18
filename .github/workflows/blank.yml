@@ -7,23 +7,23 @@ on:
     branches: [ "main" ]
   workflow_dispatch:
     inputs:
-      USER_NAME:
+      username:
         description: 'Your first name'
         required: true
         default: 'John'
-      LAST_NAME:
+      last_name:
         description: 'Your last name'
         required: true
         default: 'Doe'
-      AGE:
+      age:
         description: 'Your age'
         required: true
         default: '30'
-      FAVORITE_COLOR:
+      favorite_color:
         description: 'Favorite color'
         required: true
         default: 'blue'
-      FAVORITE_FOOD:
+      favorite_food:
         description: 'Favorite food'
         required: true
         default: 'pizza'
