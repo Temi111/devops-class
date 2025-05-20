@@ -19,3 +19,8 @@ echo "hellloooo"
 echo "hello"echo "Uthman made an update here 💻"
 date
 echo " are you working now"
+
+echo "what is your brother name"
+echo "do you have a brother"
+echo "do you have a sister"
+echo "yes my brother name is uthman and my sister name is fatima"
