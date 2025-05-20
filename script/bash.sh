@@ -20,9 +20,7 @@ echo "hello"echo "Uthman made an update here 💻"
 date
 echo " are you working now"
 
-echo "this is a test feature by uthman"
-for i in 1 2 3
-do 
-    echo "this is a test feature by uthman $i"
-done
-
+echo "what is your brother name"
+echo "do you have a brother"
+echo "do you have a sister"
+echo "yes my brother name is uthman and my sister name is fatima"
