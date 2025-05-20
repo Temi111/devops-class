@@ -19,3 +19,10 @@ echo "hellloooo"
 echo "hello"echo "Uthman made an update here 💻"
 date
 echo " are you working now"
+
+echo "this is a test feature by uthman"
+for i in 1 2 3
+do 
+    echo "this is a test feature by uthman $i"
+done
+
