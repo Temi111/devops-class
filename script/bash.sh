@@ -15,8 +15,8 @@ echo "Hello $USER_NAME $LAST_NAME, you are $AGE years old and your favorite colo
 echo "Hello $USER_NAME $LAST_NAME, you are $AGE years old, your favorite color is $FAVORITE_COLOR and your favorite food is $FAVORITE_FOOD"
 echo "Hello $USER_NAME $LAST_NAME, you are $AGE years old, your favorite color is $FAVORITE_COLOR, your favorite food is $FAVORITE_FOOD and your favorite movie is $FAVORITE_MOVIE"
 
-# to test git merge
-
+# to test git merge and stash
+## sunday
 
 echo "hellloooo"
 echo "hello"echo "Uthman made an update here 💻"
