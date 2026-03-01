@@ -29,5 +29,6 @@ jobs:
           LOCATION: ${{ inputs.location }}
           AGE: ${{ inputs.age }}
         run: |
+          ls
           chmod +x script/uthman.sh
           ./script/uthamn.sh
