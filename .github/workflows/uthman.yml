@@ -1,4 +1,4 @@
-name: User Info CI
+name: User Info UTHMAN
 
 on:
   workflow_dispatch:
@@ -29,5 +29,5 @@ jobs:
           LOCATION: ${{ inputs.location }}
           AGE: ${{ inputs.age }}
         run: |
-          chmod +x scripts/user_info.sh
+          chmod +x scripts/uthman.sh
           ./scripts/uthman.sh
