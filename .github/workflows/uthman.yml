@@ -1,0 +1,33 @@
+name: User Info CI
+
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: "Name"
+        required: true
+        default: "uthman"
+      location:
+        description: "Location"
+        required: true
+        default: "Ireland"
+      age:
+        description: "Age"
+        required: true
+        default: "33"
+
+jobs:
+  run-bash:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run script
+        env:
+          NAME: ${{ inputs.name }}
+          LOCATION: ${{ inputs.location }}
+          AGE: ${{ inputs.age }}
+        run: |
+          chmod +x scripts/user_info.sh
+          ./scripts/uthman.sh
