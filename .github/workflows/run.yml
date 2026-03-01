@@ -35,18 +35,4 @@ jobs:
       run: |
         echo "This is a multi-line script"
         echo "You can learn step by step"
-
-        git pull
-        git push 
-        git merge
-        git init
-        git clone
-        git add
-        git commit
-        git log
-        git revert
-        git rebase
-        git branch
-        git tag
-        git switch
       
