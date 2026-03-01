@@ -7,9 +7,7 @@
 # mv old new          # Move or rename file
 
 
-ls 
-mkdir uthman 
-cd uthman 
+mkdir uthman
+cd uthman
 rm -rf uthman
-touch ireland.sh
 
