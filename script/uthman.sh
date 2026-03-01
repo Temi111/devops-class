@@ -7,10 +7,9 @@
 # mv old new          # Move or rename file
 
 
-Name="uthman"
-LOCATION="Ireland"
-AGE="33"
+ls 
+mkdir uthman 
+cd uthman 
+rm -rf uthman
+touch ireland.sh
 
-echo "Name is: $Name"
-echo "Location: $LOCATION"
-echo "Age: $AGE"
