@@ -44,5 +44,15 @@ jobs:
 
           echo "Final listing"
           ls -la
+          
+          echo "new bash"
+          touch newfile.sh
 
-          echo "CI step completed ✅"
+          echo "echo Hello Ireland 🇮🇪" > newfile.sh
+
+          echo "see content
+          cat newfile.sh
+
+          
+
+          echo "CI step completed"
