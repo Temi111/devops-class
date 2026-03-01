@@ -31,4 +31,4 @@ jobs:
         run: |
           ls
           chmod +x ./script/uthman.sh
-          ./script/uthamn.sh
+          ./script/uthman.sh
