@@ -1,17 +1,48 @@
-name: User Info UTHMAN
+name: Bash Demo CI
 
 on:
-  workflow_dispatch:
+  workflow_dispatch:   # Manual trigger
+  push:
+    branches:
+      - main
 
 jobs:
   run-bash:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Run script
+      - name: Run Bash Commands
         run: |
-          ls
-          chmod +x ./script/uthman.sh
-          ./script/uthman.sh
+          set -euo pipefail
+
+          echo "Current directory:"
+          pwd
+
+          echo "Listing files:"
+          ls -la
+
+          echo "Creating folder uthman"
+          mkdir uthman
+
+          echo "Moving into folder"
+          cd uthman
+
+          echo "Creating ireland.sh file"
+          touch ireland.sh
+
+          echo "Listing inside uthman"
+          ls -la
+
+          echo "Going back to parent"
+          cd ..
+
+          echo "Removing uthman folder"
+          rm -rf uthman
+
+          echo "Final listing"
+          ls -la
+
+          echo "CI step completed ✅"
