@@ -50,7 +50,7 @@ jobs:
 
           echo "echo Hello Ireland 🇮🇪" > newfile.sh
 
-          echo "see content
+          echo "see content"
           cat newfile.sh
 
           
